@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+        body{
+            height: 1000px;
+            background: url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=159568291,2626185166&fm=26&gp=0.jpg") no-repeat 0 0/100% 100%;
+        }
+
+        .box{
+            width: 250px;
+            margin: auto;
+            border: 1px solid cornflowerblue;
+            margin-top: 50px;
+            font-size: 25px;
+            /*background: url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=159568291,2626185166&fm=26&gp=0.jpg");*/
+
+        }
+        .box .button .st{
+            float: right;
+        }
+        .box .button input{
+            width:90px;
+            height:30px;
+        }
+    </style>
+</head>
+<form action="" method="get">
+<body >
+   <div class="box">
+        账号:<input type="text" placeholder="输入账号" name="user" autocomplete="on"><br><br>
+        密码:<input type="password" placeholder="输入密码" name="password"><br><br>
+
+       性别:<input type="radio" name="b" id="boy" value="man">
+             <label for="boy">男</label>
+             <input type="radio" name="g" id="gr" value="woman">
+             <label for="gr">女</label>
+             <input type="radio" name="unknown" disabled>保密 <br><br>
+
+       爱好:<input type="checkbox" name="hood" value="唱歌">唱歌
+            <input type="checkbox" name="hood" value="跳舞">跳舞
+            <input type="checkbox" name="hood" value="rap">ra..<br><br>
+       <ul class="button">
+           <li class="st"><input type="submit"></li>
+           <li><input type="reset"></li>
+       </ul>
+   </div>
+
+
+
+
+    <!--上传头像:<input type="button" value="选择图片"> <br><br>-->
+
+    <!--地址:<select name="city">-->
+            <!--<option value="长沙市">长沙市</option>-->
+            <!--<option value="西安市" selected>西安市</option>-->
+            <!--<option value="天津市">天津市</option>-->
+            <!--<option value="上海市">上海市</option>-->
+    <!--</select> <br><br>-->
+
+    <!--个人简绍:<textarea name="wenben" id="" cols="20" rows="10" placeholder="对自己的看法"></textarea><br><br>-->
+
+
+    </body>
+</html>
