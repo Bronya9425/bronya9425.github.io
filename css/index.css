@@ -1,0 +1,303 @@
+.main{
+    width: 100%;
+    padding: 30px;
+}
+
+.main .main-box{
+    width: 1200px;
+    margin: auto;
+    background: #aa8899;
+}
+
+.main .main-box .main-contain{
+    float: left;
+    width: 800px;
+    background: #33aa75;
+}
+
+/*banner start*/
+.main .main-box .main-contain .banner{
+    width: 800px;
+    height: 200px;
+    position: relative;
+    background: #aa132b;
+}
+
+.main .main-box .main-contain .banner .pic li{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main .main-box .main-contain .banner .pic li img{
+    width: 800px;
+    height: 200px;
+}
+
+.main .main-box .main-contain .banner .tab{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 128px;
+    margin-left: -64px;
+}
+
+.main .main-box .main-contain .banner .tab li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid red;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.main .main-box .main-contain .banner .tab li.on{
+    background: #3255ff;
+}
+
+.main .main-box .main-contain .banner .btn li{
+    /*display: block;*/
+    font-size: 50px;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    margin-top: -25px;
+    display: none;
+
+}
+
+.main .main-box .main-contain .banner:hover .btn li{
+    display: block;
+    cursor: pointer;
+}
+
+.main .main-box .main-contain .banner .btn li.left{
+    left: 0;
+}
+
+.main .main-box .main-contain .banner .btn li.right{
+    right: 0;
+}
+
+
+/*content start*/
+
+.main .main-box .main-contain .content{
+    width: 800px;
+    background: aqua;
+    font-size: 14px;
+}
+
+.main .main-box .main-contain .content .recommend-news li a img{
+    width: 250px;
+    height: 180px;
+}
+
+/*.main .main-box .main-contain .content .recommend-news li{*/
+    /*float: left;*/
+    /*margin: 8px;*/
+/*}*/
+
+.main .main-box .main-contain .content .recommend-news{
+    /*开启弹性盒子*/
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: space-around;
+    /*http://www.runoob.com/cssref/css3-pr-justify-content.html*/
+    /*
+    space-around 各行之间留有空白的容器内
+    space-between 各行之前、之间、之后留有空白的容器内
+    */
+    /*border: 2px solid red;*/
+    padding: 20px 15px 0;
+
+}
+
+.main .main-box .main-contain .content .recommend-news li p{
+    text-align: center;
+    line-height: 35px;
+}
+
+.main .main-box .main-contain .content .recommend-news li>a{
+    display: block;
+    width: 250px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.main .main-box .main-contain .content .recommend-news li a img:hover{
+        /*
+    http://www.w3school.com.cn/cssref/pr_transform.asp
+     */
+    transform: scale(1.2);
+}
+
+/* news-nav start*/
+.main .main-box .main-contain .news-nav{
+    width: 800px;
+}
+.main .main-box .main-contain .news-nav .nav{
+    /*width: 800px;*/
+    height: 60px;
+    line-height: 60px;
+    background: #3255ff;
+}
+
+.main .main-box .main-contain .news-nav .nav li{
+    float: left;
+    height: 60px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.main .main-box .main-contain .news-nav .nav li.active{
+    border-bottom: 5px solid red;
+    box-sizing: border-box;
+}
+
+/*contain*/
+.main .main-box .main-contain .news-nav .contain{
+    width: 800px;
+    background: chocolate;
+}
+
+.main .main-box .main-contain .news-nav .contain li div{
+    margin-bottom: 20px;
+}
+
+.main .main-box .main-contain .news-nav .contain li div .left{
+    float: left;
+    width: 260px;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 25px;
+    background: #16ff34;
+    overflow: hidden;
+
+}
+
+.main .main-box .main-contain .news-nav .contain li div .left img{
+    width: 260px;
+    height: 200px;
+}
+
+.main .main-box .main-contain .news-nav .contain li div .right{
+    float: left;
+    line-height: 35px;
+    padding: 25px 0 0 10px;
+
+}
+
+.main .main-box .main-contain .news-nav .contain > li{
+    display: none;
+}
+
+.main .main-box .main-contain .news-nav .contain > li.show{
+    display: block;
+}
+
+/*more*/
+.main .main-box .main-contain .more{
+    width: 400px;
+    height: 80px;
+    font-size: 35px;
+    line-height: 80px;
+    text-align: center;
+    background: darkcyan;
+    margin: auto;
+}
+
+
+.main .main-box .aside{
+    width: 360px;
+    float: right;
+    background: aqua;
+}
+
+.main .main-box .aside .side-activities h2{
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.main .main-box .aside .side-activities h2 span{
+    float: right;
+    color: #aa8899;
+}
+
+.main .main-box .aside .side-activities div img{
+    width: 320px;
+    padding: 0 20px;
+}
+
+.main .main-box .aside .side-activities div p{
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.main .main-box .aside .about{
+    padding: 0 20px;
+    width: 320px;
+    background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561062644049&di=9b3e85836758d6a239d360fec324a3e8&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3D0bb379980c24ab18e016e13f05fbe69a%2F7e64b5fb43166d22169f892a432309f79252d2c7.jpg") no-repeat 200px 5px/100px 100px;
+}
+
+.main .main-box .aside .about ul li{
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.main .main-box .about ul li span{
+    margin-left: 30px;
+}
+
+.main .main-box .aside .hot-news{
+    width: 320px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.main .main-box .aside .hot-news div{
+    width: 200px;
+    line-height: 28px;
+
+    /*超出隐藏*/
+    overflow: hidden;
+    /*出现省略号*/
+    text-overflow: ellipsis;
+    /*设置行数*/
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+
+}
+
+.main .main-box .aside .hot-news p{
+    width: 200px;
+    padding: 0;
+}
+
+.main .main-box .aside .hot-news p .left{
+    float: left;
+}
+
+.main .main-box .aside .hot-news p .right{
+    float: right;
+}
+
+.main .main-box .aside .hot-news img{
+    width: 110px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    left: 230px;
+}
+
+
